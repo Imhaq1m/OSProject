@@ -222,7 +222,8 @@ total 44
  4 drwxrwxrwx+ 9 codespace root  4096 Jan 26 01:22 .git
 28 -rw-rw-rw-  1 codespace root 24789 Jan 26 01:27 README.md
  4 drwxrwxrwx+ 2 codespace root  4096 Jan 26 01:02 images__.
-7. Run the command **free -h** . ***(1 mark)*** __              total        used        free      shared  buff/cache   available
+7. Run the command **free -h** . ***(1 mark)*** 
+__total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.4Gi       291Mi        64Mi       6.0Gi       5.9Gi
 Swap:            0B          0B          0B__.
 8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __processor       : 0
@@ -280,18 +281,17 @@ clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __
-top - 01:29:16 up  9:58,  0 users,  load average: 0.14, 0.22, 0.17
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** __top - 01:29:16 up  9:58,  0 users,  load average: 0.14, 0.22, 0.17
 Tasks:  20 total,   1 running,  19 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.8 us,  1.7 sy,  0.0 ni, 97.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
 MiB Mem :   7929.6 total,    308.8 free,   1443.5 used,   6177.3 buff/cache
 MiB Swap:      0.0 total,      0.0 free,      0.0 used.   6106.5 avail Mem 
 
     PID USER      PR  NI    VIRT    RES    SHR S  %CPU  %MEM     TIME+ COMMAND             
-   2547 codespa+  20   0   41.5g 336600  50304 S   0.7   4.1   0:32.43 node                
-   3008 codespa+  20   0   11.1g  68264  44032 S   0.3   0.8   0:01.46 node                
-      1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.87 docker-init         
-      7 codespa+  20   0    7236   1792   1792 S   0.0   0.0   0:00.02 sleep               
+    2547 codespa+  20   0   41.5g 336600  50304 S   0.7   4.1   0:32.43 node                
+    3008 codespa+  20   0   11.1g  68264  44032 S   0.3   0.8   0:01.46 node                
+    1 codespa+  20   0    1136    640    640 S   0.0   0.0   0:00.87 docker-init         
+    7 codespa+  20   0    7236   1792   1792 S   0.0   0.0   0:00.02 sleep               
     114 root      20   0   12196   3412   2560 S   0.0   0.0   0:00.00 sshd                
     997 root      20   0 1983004  76956  52736 S   0.0   0.9   0:01.70 dockerd__.
 10. Run the command **uname -a**. ***(1 mark)*** __Linux codespaces-e95140 6.5.0-1025-azure #26~22.04.1-Ubuntu SMP Thu Jul 11 22:33:04 UTC 2024 x86_64 x86_64 x86_64 GNU/Linux__.
