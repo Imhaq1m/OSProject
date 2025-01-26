@@ -1,8 +1,8 @@
 # OSProject Running Containers for Application Development
 
-Group Name: __Fill your team name__. 
+Group Name: __IHI__. 
 
-Section: __Fill your class section__. 
+Section: __6__. 
 
 Team Mates:
 1. __IMRAN HAKIM BIN MOHD NORHISHAM__ and __2317783__
