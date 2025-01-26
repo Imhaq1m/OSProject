@@ -435,11 +435,17 @@ docker run -itd --net rednet --name c2 busybox sh
 ```
 ***Questions:***
 
-1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __Fill answer here__.
-2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __Fill answer here__.
-3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __Fill answer here__.
-4. What is the network address for the running container c1 and c2? ***(1 mark)*** __Fill answer here__.
-5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
+1. Describe what is busybox and what is command switch **--name** is for? . ***(2 mark)*** __BusyBox is a lightweight, open-source software suite that combines tiny versions of many common UNIX utilities into a single executable. --name command is for Docker commands to assign a name to a container when running it__.
+2. Explore the network using the command ```docker network ls```, show the output of your terminal. ***(1 mark)*** __
+NETWORK ID     NAME      DRIVER    SCOPE
+8d667633554e   bluenet   bridge    local
+415e976ffb0c   bridge    bridge    local
+19f437de3be6   host      host      local
+4365f58f88ee   none      null      local
+bba5cfed6c89   rednet    bridge    local__.
+3. Using ```docker inspect c1``` and ```docker inspect c2``` inscpect the two network. What is the gateway of bluenet and rednet.? ***(1 mark)*** __bluenet: 172.18.0.1. rednet: 172.19.0.1__.
+4. What is the network address for the running container c1 and c2? ***(1 mark)*** __172.18.0.0__.
+5. Using the command ```docker exec c1 ping c2```, which basically tries to do a ping from container c1 to c2. Are you able to ping? Show your output . ***(1 mark)*** __ping: bad address 'c2'__.
 
 ## Bridging two SUB Networks
 1. Let's try this again by creating a network to bridge the two containers in the two subnetworks
@@ -451,8 +457,20 @@ docker exec c1 ping c2
 ```
 ***Questions:***
 
-1. Are you able to ping? Show your output . ***(1 mark)*** __Fill answer here__.
-2. What is different from the previous ping in the section above? ***(1 mark)*** __Fill answer here__.
+1. Are you able to ping? Show your output . ***(1 mark)*** __
+PING c2 (172.20.0.3): 56 data bytes
+64 bytes from 172.20.0.3: seq=0 ttl=64 time=0.127 ms
+64 bytes from 172.20.0.3: seq=1 ttl=64 time=0.076 ms
+64 bytes from 172.20.0.3: seq=2 ttl=64 time=0.089 ms
+64 bytes from 172.20.0.3: seq=3 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=4 ttl=64 time=0.094 ms
+64 bytes from 172.20.0.3: seq=5 ttl=64 time=0.149 ms
+64 bytes from 172.20.0.3: seq=6 ttl=64 time=0.103 ms
+64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.085 ms
+64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.103 ms
+64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.090 ms
+64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.106 ms__.
+2. What is different from the previous ping in the section above? ***(1 mark)*** __Previous ping is about hostname c2 cannot be resolved to an IP address while this ping is about hostname c2 is resolved, and ping is working.__.
 
 ## Intermediate Level (10 marks bonus)
 
