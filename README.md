@@ -613,7 +613,7 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Cannot GET /. __.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Cannot GET /. The error occurs because the Node.js application does not have a route defined for the root path (/).__.
 2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
 
 
