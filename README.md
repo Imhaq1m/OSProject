@@ -288,6 +288,7 @@ cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
 power management:
 __.
+
 9. Run the command **top** and type **q** to quit. ***(1 mark)*** __
 top - 01:29:16 up  9:58,  0 users,  load average: 0.14, 0.22, 0.17
 Tasks:  20 total,   1 running,  19 sleeping,   0 stopped,   0 zombie
