@@ -112,8 +112,10 @@ tmpfs              65536        0     65536   0% /dev
 shm                65536        8     65528   1% /dev/shm
 /dev/root       30298176 24934564   5347228  83% /vscode
 /dev/sdc1       46127956 18672408  25079972  43% /tmp
-/dev/loop4      32847680 10705868  20447712  35% /workspaces__.
-4. Run the command **du** . ***(1 mark)*** __8       ./.git/refs/heads
+/dev/loop4      32847680 10705868  20447712  35% /workspaces
+__.
+4. Run the command **du** . ***(1 mark)*** __
+8       ./.git/refs/heads
 4       ./.git/refs/tags
 12      ./.git/refs/remotes/origin
 16      ./.git/refs/remotes
@@ -213,7 +215,8 @@ shm                65536        8     65528   1% /dev/shm
 36      ./.git/logs
 2788    ./.git
 1972    ./images
-4788    .__.
+4788    .
+__.
 5. Run the command **ls** . ***(1 mark)*** __README.md  images__.
 6. Run the command **ls -asl** . ***(1 mark)*** __
 total 44
@@ -221,12 +224,15 @@ total 44
  4 drwxr-xrwx+ 5 codespace root  4096 Jan 26 01:02 ..
  4 drwxrwxrwx+ 9 codespace root  4096 Jan 26 01:22 .git
 28 -rw-rw-rw-  1 codespace root 24789 Jan 26 01:27 README.md
- 4 drwxrwxrwx+ 2 codespace root  4096 Jan 26 01:02 images__.
-7. Run the command **free -h** . ***(1 mark)*** 
-__total        used        free      shared  buff/cache   available
+ 4 drwxrwxrwx+ 2 codespace root  4096 Jan 26 01:02 images
+ __.
+7. Run the command **free -h** . ***(1 mark)*** __
+total        used        free      shared  buff/cache   available
 Mem:          7.7Gi       1.4Gi       291Mi        64Mi       6.0Gi       5.9Gi
-Swap:            0B          0B          0B__.
-8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __processor       : 0
+Swap:            0B          0B          0B
+__.
+8. Run the command **cat /proc/cpuinfo** . ***(1 mark)*** __
+processor       : 0
 vendor_id       : AuthenticAMD
 cpu family      : 25
 model           : 1
@@ -280,8 +286,10 @@ TLB size        : 2560 4K pages
 clflush size    : 64
 cache_alignment : 64
 address sizes   : 48 bits physical, 48 bits virtual
-power management:__.
-9. Run the command **top** and type **q** to quit. ***(1 mark)*** __top - 01:29:16 up  9:58,  0 users,  load average: 0.14, 0.22, 0.17
+power management:
+__.
+9. Run the command **top** and type **q** to quit. ***(1 mark)*** __
+top - 01:29:16 up  9:58,  0 users,  load average: 0.14, 0.22, 0.17
 Tasks:  20 total,   1 running,  19 sleeping,   0 stopped,   0 zombie
 %Cpu(s):  0.8 us,  1.7 sy,  0.0 ni, 97.5 id,  0.0 wa,  0.0 hi,  0.0 si,  0.0 st
 MiB Mem :   7929.6 total,    308.8 free,   1443.5 used,   6177.3 buff/cache
@@ -469,7 +477,8 @@ PING c2 (172.20.0.3): 56 data bytes
 64 bytes from 172.20.0.3: seq=7 ttl=64 time=0.085 ms
 64 bytes from 172.20.0.3: seq=8 ttl=64 time=0.103 ms
 64 bytes from 172.20.0.3: seq=9 ttl=64 time=0.090 ms
-64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.106 ms__.
+64 bytes from 172.20.0.3: seq=10 ttl=64 time=0.106 ms
+__.
 2. What is different from the previous ping in the section above? ***(1 mark)*** __Previous ping is about hostname c2 cannot be resolved to an IP address while this ping is about hostname c2 is resolved, and ping is working.__.
 
 ## Intermediate Level (10 marks bonus)
@@ -613,8 +622,8 @@ You have now set up a Node.js application in a Docker container on nodejsnet net
 
 ***Questions:***
 
-1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Cannot GET /. The error occurs because the Node.js application does not have a route defined for the root path (/).__.
-2. Show the instruction needed to make this work. ***(1 mark)*** __Fill answer here__.
+1. What is the output of step 5 above, explain the error? ***(1 mark)*** __Cannot GET /. The error occurs because the Node.js application does not have a route defined for the root path.__.
+2. Show the instruction needed to make this work. ***(1 mark)*** __First, create a bridge network and connect the Node.js and MySQL containers. Next, restart the containers after connecting them to the common network to ensure the changes take effect__.
 
 
 
